@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form | freecodecamp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle-layout circle-left-first"></div>
+        <div class="circle-layout circle-left-second"></div>
+        <div class="circle-layout circle-left-third"></div>
+        <div class="circle-layout circle-left-fourth"></div>
+      
+    
+        <div class="circle-layout circle-right-third"></div>
+        <div class="circle-layout circle-right-first"></div>
+        <div class="circle-layout circle-right-fourth"></div>
+       
+
+    </section>
+
+    <div class="form-background">
+        
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">Please help us to improve our platform</p>
+
+    <form id="survey-form" action="#" method="post">
+        <div class="personal-info">
+
+             <section class="box-design">
+             <label id="name-label" for="name">Name</label> <br>
+             <input type="text" id="name" class="effect" name="name" placeholder="Enter your name" required><br>
+            </section>
+
+            <section>
+            <label id="email-label" for="email" aria-placeholder="Enter your email">Eamil</label> <br>
+            <input type="email" id="email" class="effect" name="email" placeholder="Enter your email" required>  <br>
+            </section>
+
+            <section>
+            <label id="number-label" for="number" aria-placeholder="Age">Age</label> <br>
+            <input type="number" id="number" class="effect" name="number" min=10 max=99 placeholder="Age" required><br>
+            </section>
+        </div>
+
+        <div class="effect">
+            <p class="some-padding">What is your current occupation ?</p>
+            <select class="select" id="dropdown" name="multi-option" required>
+            <option disabled selected value>Select your option</option>
+            <option value="student">Student</option>
+            <option value="fulltimejob">Full Time Job</option>
+            <option value="parttimejob">Part Time Job</option>
+            <option value="fulltimelearner">Full Time Learner</option>
+            <option value="prefernotsay">Prefer not to say</option>
+            <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="radio-design">
+            <p class="radio-padding">Would you find this site useful ?</p>
+            <input type="radio" id = "definetly" name="group-element" value="definetly" checked><label class="common-label" for="definetly">Definetly</label> <br>
+            <input type="radio" id = "somewhat" name="group-element" value="somewhat"><label class="common-label" for="somewhat">Somewhat</label> <br>
+            <input type="radio" id = "notsure" name="group-element" value="notsure"><label class="common-label" for="notsure">Not Sure</label> <br>
+         </div>
+
+
+         <div class="checkbox-design checkbox-padding">
+         <p class="radio-padding"> 
+            Which skills you like to improve in this site ?
+         </p>
+
+        <input type="checkbox" id="#" name="frontend-skills" value="frontend-skills"><label class="checkbox-label" for="frontend-skills">Front-end Skills</label><br>
+        <input type="checkbox" id="#" name="backend-skills" value="backend-skills"><label class="checkbox-label" for="backend-skills">Back-end Skills</label><br>
+        <input type="checkbox" id="#" name="data-science" value="data-science"><label class="checkbox-label" for="data-science">Data Science</label><br>
+        <input type="checkbox" id="#" name="javaScript" value="javaScript"><label class="checkbox-label" for="javaScript">javaScript</label><br>
+        <input type="checkbox" id="#" name="python" value="python"><label class="checkbox-label" for="python">Python</label><br>
+        <input type="checkbox" id="#" name="Java" value="Java"><label class="checkbox-label" for="Java">Java</label><br>
+        <input type="checkbox" id="#" name="graphics-design" value="graphics-design"><label class="checkbox-label" for="graphics-design">Graphics Design</label><br>
+        <input type="checkbox" id="#" name="data-analyst" value="data-analyst"><label class="checkbox-label" for="data-analyst">Data Analyst</label><br>
+        <input type="checkbox" id="#" name="machine-learning" value="machine-learning"><label class="checkbox-label" for="machine-learning">Machine Learning</label><br>
+        <input type="checkbox" id="#" name="video-editing" value="video-editing"><label class="checkbox-label" for="video-editing">Video Editing</label><br>
+        
+   </div>
+
+   <div class="textarea-wrapper">
+
+   <textarea class="textarea-design"  placeholder="Please give your awesome ideas to improve our site"></textarea>
+</div>
+
+<div class="button-wrapper">
+   <input class="submit-button" type="submit" id="submit" value="Sumbit">
+</div>
+</form>
+
+
+</div>
+
+</body>
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
